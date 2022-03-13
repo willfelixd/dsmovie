@@ -73,10 +73,41 @@ a, a:hover {
 .dsmovie-card {
     width: 100%;
 }
+.row {
+    transform: translate(-2.1%);  
+}
 
+ul li{
+    position:relative;
+    display:inline-block;
+    margin: 3rem 3rem 3rem 1.1rem;
+    border-radius:5px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  ul li:after{
+    content:"";
+    position:absolute;
+    opacity:0;
+    border-radius:5px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);  
+  }
+  
+  ul li:hover{
+    transform:scale(1.25,1.25);
+  }
+  
+  ul li:hover::after{
+    opacity:1;
+  }
+
+.dsmovie-card-box-shadow{
+    border-radius: 8px 8px 0 0;
+    box-shadow:0 1px 2px 0 var(--color-primary);
+}
 .dsmovie-card img{
     width: 100%;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;   
 }
 
 .dsmovie-card-description{
@@ -88,6 +119,7 @@ a, a:hover {
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
     height: 190px;
+    box-shadow:0 1px 2px 0 var(--color-primary);
 }
 
 .dsmovie-card-description h3 {
@@ -146,6 +178,7 @@ a, a:hover {
     flex-direction: column;
     align-items: center;
     border-radius: 0 0 8px 8px;
+    box-shadow:0 1px 2px 0 var(--color-primary);
 }
 
 .dsmovie-form{
