@@ -73,7 +73,7 @@ a, a:hover {
     width: 100%;
 }
 .row {
-    transform: translate(-2.1%);  
+    transform: translate(-3.3%);  
 }
 
 ul li{
@@ -124,7 +124,7 @@ ul li{
 .dsmovie-card-description h3 {
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     text-align: center;
 }
 
@@ -148,10 +148,67 @@ ul li{
     font-size: 12px;
     font-weight: 400;
     color: var(--text-light-gray);
-    margin-bottom: 10px;
+    margin-bottom: -5px;
+}
+.dsmovie-btn, .dsmovie-btn:hover{
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 0;
 }
 
-.dsmovie-btn, .dsmovie-btn:hover{
+.dsmovie-btn-b1, .dsmovie-btn-b1:hover{
+    width: 200px;
+    height: 25px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 0;
+}
+
+.dsmovie-btn-b2, .dsmovie-btn-b2:hover{
+    width: 200px;
+    height: 25px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 0;
+}
+
+.dsmovie-form-btn-container-b1{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dsmovie-form-btn-container-b2{
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dsmovie-btn-sinopse, .dsmovie-btn-sinopse:hover{
     width: 180px;
     height: 40px;
     background-color: var(--color-primary);
@@ -185,8 +242,14 @@ ul li{
 }
 
 .dsmovie-form-description h3{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dsmovie-form-description p{
+    font-size: 13px;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
@@ -200,6 +263,14 @@ ul li{
 }
 
 .dsmovie-form-btn-container{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dsmovie-form-btn-sinopse-container{
     height: 100px;
     display: flex;
     flex-direction: column;
