@@ -4,9 +4,11 @@
     --bg-gray: #ddd;
     --text-gray: #4a4a4a4a;
     --color-primary: #4D41C0;
+    --color-primary2: #2a2344;
     --white: #FFFFFF;
     --text-light-gray: #aaa;
     --star-yellow: #FFBB3A;
+    --botton-green: #31d5de;
 }
 
 *{
@@ -20,7 +22,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 html, body{
-    background-image: url("https://cloud.3dissue.com/151459/151647/177266/16pClotrimazoleFlipbook/files/assets/background/background.jpg");
+    background-image: url("https://i.pinimg.com/736x/f1/65/6e/f1656e59ee2dd877040bbc273fda1e1d.jpg");
     background-color: var(--bg-gray);
     background-size: cover;
     background-position: center top;
@@ -167,7 +169,7 @@ ul li{
 .dsmovie-btn-b1, .dsmovie-btn-b1:hover{
     width: 200px;
     height: 25px;
-    background-color: var(--color-primary);
+    background-color: #2a2344;    
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -181,7 +183,7 @@ ul li{
 .dsmovie-btn-b2, .dsmovie-btn-b2:hover{
     width: 200px;
     height: 25px;
-    background-color: var(--color-primary);
+    background-color: var(--botton-green);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -323,4 +325,18 @@ ul li{
 
 .dsmovie-flip-horizontal{
     transform: rotate(180deg);
+}
+
+footer{
+    background-color: var(--color-primary);
+    color: var(--white);  
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-card video{
+    width: 100%;
+    border-radius: 8px 8px 0 0;   
+    margin: 0;
 }
