@@ -4,11 +4,11 @@
     --bg-gray: #ddd;
     --text-gray: #4a4a4a4a;
     --color-primary: #4D41C0;
-    --color-primary2: #2a2344;
+    --color-primary2: #1d2440;
     --white: #FFFFFF;
     --text-light-gray: #aaa;
     --star-yellow: #FFBB3A;
-    --botton-green: #31d5de;
+    --botton-green: #4b538b;
 }
 
 *{
@@ -30,7 +30,7 @@ html, body{
   }
 
 header{
-    background-color: var(--color-primary);
+    background-color: var(--color-primary2);
     color: var(--white);  
     height: 60px;
     display: flex;
@@ -104,7 +104,7 @@ ul li{
 
 .dsmovie-card-box-shadow{
     border-radius: 8px 8px 0 0;
-    box-shadow:0 1px 2px 0 var(--color-primary);
+    box-shadow:0 1px 2px 0 var(--color-primary2);
 }
 .dsmovie-card img{
     width: 100%;
@@ -120,7 +120,7 @@ ul li{
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
     height: 190px;
-    box-shadow:0 1px 2px 0 var(--color-primary);
+    box-shadow:0 1px 2px 0 var(--color-primary2);
 }
 
 .dsmovie-card-description h3 {
@@ -155,7 +155,7 @@ ul li{
 .dsmovie-btn, .dsmovie-btn:hover{
     width: 180px;
     height: 40px;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary2);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -169,7 +169,7 @@ ul li{
 .dsmovie-btn-b1, .dsmovie-btn-b1:hover{
     width: 200px;
     height: 25px;
-    background-color: #2a2344;    
+    background-color: var(--color-primary2);    
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -213,7 +213,7 @@ ul li{
 .dsmovie-btn-sinopse, .dsmovie-btn-sinopse:hover{
     width: 180px;
     height: 40px;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary2);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -236,7 +236,7 @@ ul li{
     flex-direction: column;
     align-items: center;
     border-radius: 0 0 8px 8px;
-    box-shadow:0 1px 2px 0 var(--color-primary);
+    box-shadow:0 1px 2px 0 var(--color-primary2);
 }
 
 .dsmovie-form{
@@ -296,14 +296,14 @@ ul li{
 .dsmovie-pagination-box p{
     margin: 0;
     font-size: 12px;
-    color: var(--color-primary);
+    color: var(--color-primary2);
     font-weight: 400;
 }
 
 .dsmovie-pagination-box button{
     width: 40px;
     height: 40px;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-primary2);
     border-radius: 4px;
     background-color: var(--white);
     display: flex;
@@ -313,6 +313,7 @@ ul li{
 
 .dsmovie-pagination-box button img{
     filter: brightness(0) saturate(100%) invert(20%) sepia(83%) saturate(2641%) hue-rotate(239deg) brightness(90%) contrast(85%);
+    color: var(--color-primary2);
 }
 
 .dsmovie-pagination-box button:disabled{
@@ -328,7 +329,7 @@ ul li{
 }
 
 footer{
-    background-color: var(--color-primary);
+    background-color: var(--color-primary2);
     color: var(--white);  
     height: 100px;
     display: flex;
