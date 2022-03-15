@@ -312,8 +312,8 @@ ul li{
 }
 
 .dsmovie-pagination-box button img{
-    filter: brightness(0) saturate(100%) invert(20%) sepia(83%) saturate(2641%) hue-rotate(239deg) brightness(90%) contrast(85%);
-    color: var(--color-primary2);
+    width: 15px;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(33%) saturate(729%) hue-rotate(194deg) brightness(95%) contrast(92%);  
 }
 
 .dsmovie-pagination-box button:disabled{
@@ -321,11 +321,12 @@ ul li{
 }
 
 .dsmovie-pagination-box button:disabled img{
-    filter: unset;
+    filter: brightness(0) saturate(100%) invert(70%) sepia(19%) saturate(7%) hue-rotate(52deg) brightness(97%) contrast(81%);
 }
 
 .dsmovie-flip-horizontal{
     transform: rotate(180deg);
+    color: var(--color-primary2);
 }
 
 footer{
