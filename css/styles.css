@@ -281,13 +281,13 @@ ul li{
 }
 
 .dsmovie-pagination-container{
-    padding: 15px 0;
+    padding: 12px 0;
     display: flex;
     justify-content: center;
 }
 
 .dsmovie-pagination-box{
-    width: 180px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -298,16 +298,42 @@ ul li{
     font-size: 12px;
     color: var(--color-primary2);
     font-weight: 400;
+    justify-content: space-evenly;
+}
+
+.dsmovie-pagination-box p1{
+    margin: 0;
+    font-size: 11px;
+    color: var(--botton-green);
+    font-weight: 400;
+    justify-content: space-evenly;
+}
+
+.dsmovie-pagination-box p2{
+    margin: 0;
+    font-size: 11px;
+    color: var(--text-light-gray);
+    font-weight: 400;
+    justify-content: space-evenly;
 }
 
 .dsmovie-pagination-box button{
-    width: 40px;
-    height: 40px;
+    width: 85px;
+    height: 25px;
     border: 1px solid var(--color-primary2);
     border-radius: 4px;
     background-color: var(--white);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dsmovie-pagination-box button a{
+    width: 85px;
+    height: 25px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
