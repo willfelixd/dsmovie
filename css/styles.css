@@ -338,7 +338,7 @@ ul li{
 }
 
 .dsmovie-pagination-box button img{
-    width: 15px;
+    width: 11px;
     filter: brightness(0) saturate(100%) invert(32%) sepia(33%) saturate(729%) hue-rotate(194deg) brightness(95%) contrast(92%);  
 }
 
