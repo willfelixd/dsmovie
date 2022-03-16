@@ -43,10 +43,19 @@ nav{
     justify-content: space-between;
 }
 
-nav h1{
+.logo img{
+    
+    height: 37px;  
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* nav h1{
     font-size: 24px;
     font-weight: 700;
-}
+}*/ 
 
 nav a{
     font-size: 12px;
@@ -162,7 +171,7 @@ ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 7px; /* original 4px */
     border: 0;
 }
 
@@ -176,7 +185,7 @@ ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 7px;
     border: 0;
 }
 
@@ -190,7 +199,7 @@ ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 7px;
     border: 0;
 }
 
@@ -220,7 +229,7 @@ ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 7px;
     border: 0;
 }
 
@@ -321,7 +330,7 @@ ul li{
     width: 85px;
     height: 25px;
     border: 1px solid var(--color-primary2);
-    border-radius: 4px;
+    border-radius: 7px;
     background-color: var(--white);
     display: flex;
     justify-content: space-evenly;
@@ -331,7 +340,7 @@ ul li{
 .dsmovie-pagination-box button a{
     width: 85px;
     height: 25px;
-    border-radius: 4px;
+    border-radius: 7px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
