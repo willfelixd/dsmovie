@@ -17,32 +17,151 @@
     font-family: 'Open Sans';
 }
 
+/*Barra Superior nova*/
+.wrapper{
+    width: 1170px;
+    margin: 0% auto;
+}
+
+header {
+    height: 100px;
+    background-image: linear-gradient(to bottom, var(--color-primary2), var(--botton-green));
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.logo{   
+    margin: 0 29px;
+    float: left;
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 140px;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+}
+
+nav{
+    margin: 0 0 0 0;
+    float: right;
+    line-height: 40px;
+    display: flex; 
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+nav a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 0 32px;
+    font-size: 15px;
+    font-weight: 550;
+    color: var(--white);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    /*background-color: var(--color-primary2);*/
+    display: inline-block;
+    line-height: 40px;
+    color: #616aaa;
+}
+
+.banner-area{
+    width: 100%;
+    height: 100px;
+    background-image: url("https://techbit.pt/wp-content/uploads/2021/01/disney-catalogo-filmes-series-star.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;  
+    align-items: center;  
+    justify-content: space-between;
+}
+
+.banner-area2{
+    width: 100%;
+    height: 300px;
+    background-image: url("https://techbit.pt/wp-content/uploads/2021/01/disney-catalogo-filmes-series-star.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;  
+    align-items: center;  
+    justify-content: space-between;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
+}
+
+.banner-area2 h2{
+    padding-top: 8%;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--white);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
+    text-align: center;
+}
+
+.banner-area2 p{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--white);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
+    text-align: center;
+}
+
+.content-area {
+    position: relative;
+    margin: 0;
+}
+/*********************/
+
 h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
 
-html, body{
+/*Responsividade Nelio Alves
+.html, body{
     background-image: url("https://i.pinimg.com/736x/f1/65/6e/f1656e59ee2dd877040bbc273fda1e1d.jpg");
     background-color: var(--bg-gray);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;     
-  }
+  }*/
 
+/*Responsividade do Guanabara*/
+.main {
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+}
+/*****************************/
+
+/* header antigo
 header{
     background-color: var(--color-primary2);
     color: var(--white);  
     height: 60px;
     display: flex;
     align-items: center;
-}
+}*/
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
+/*
 .logo img{
     
     height: 37px;  
@@ -50,17 +169,25 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+}*/
 
 /* nav h1{
     font-size: 24px;
     font-weight: 700;
 }*/ 
 
+/*
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 nav a{
     font-size: 12px;
     font-weight: 400;
-}
+}*/
 
 a, a:hover {
     text-decoration: none;
@@ -75,18 +202,23 @@ a, a:hover {
 .dsmovie-contact-container img {
     margin-right: 10px;
 }
-
+/*Controla a distancia da lista, e a responsividade em tomanhos de telas diferentes*/
 #dsmovie-card-list{
-    padding: 0px 10px;
+    padding: 17px 83px;
+    min-width: 280px;  /*Tela de celular*/
+    max-width: 2000px; /*Monitor*/
+    margin: auto;
 }
+/***********************************************************************************/
 
 .dsmovie-card {
     width: 100%;
 }
 .row {
-    transform: translate(-3.3%);  
+    transform: translate(-2.3%);  
 }
 
+/*Efeito Zoom nos Cards*/
 ul li{
     position:relative;
     display:inline-block;
@@ -110,6 +242,7 @@ ul li{
   ul li:hover::after{
     opacity:1;
   }
+/**********************************************************/
 
 .dsmovie-card-box-shadow{
     border-radius: 8px 8px 0 0;
@@ -290,13 +423,13 @@ ul li{
 }
 
 .dsmovie-pagination-container{
-    padding: 12px 0;
+    padding: 0 0 12px;
     display: flex;
     justify-content: center;
 }
 
 .dsmovie-pagination-box{
-    width: 250px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -304,7 +437,7 @@ ul li{
 
 .dsmovie-pagination-box p{
     margin: 0;
-    font-size: 12px;
+    font-size: 11px;
     color: var(--color-primary2);
     font-weight: 400;
     justify-content: space-evenly;
@@ -327,10 +460,11 @@ ul li{
 }
 
 .dsmovie-pagination-box button{
-    width: 85px;
-    height: 25px;
-    border: 1px solid var(--color-primary2);
+    width: 70px;
+    height: 18px;
+    border: 1px solid #616aaa;
     border-radius: 7px;
+    box-shadow:0 1px 0 1px #616aaa;
     background-color: var(--white);
     display: flex;
     justify-content: space-evenly;
@@ -348,7 +482,7 @@ ul li{
 
 .dsmovie-pagination-box button img{
     width: 11px;
-    filter: brightness(0) saturate(100%) invert(32%) sepia(33%) saturate(729%) hue-rotate(194deg) brightness(95%) contrast(92%);  
+    filter: brightness(0) saturate(100%) invert(32%) sepia(33%) saturate(729%) hue-rotate(194deg) brightness(95%) contrast(92%);
 }
 
 .dsmovie-pagination-box button:disabled{
@@ -363,9 +497,10 @@ ul li{
     transform: rotate(180deg);
     color: var(--color-primary2);
 }
-
+/*Rodapé*/
 footer{
-    background-color: var(--color-primary2);
+    background-image: linear-gradient(to bottom, var(--botton-green), var(--color-primary2));
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
     color: var(--white);  
     height: 100px;
     display: flex;
