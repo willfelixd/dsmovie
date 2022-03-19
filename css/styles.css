@@ -17,7 +17,7 @@
     font-family: 'Open Sans';
 }
 
-/*Barra Superior nova*/
+/****************************Barra Superior nova*******************************************/
 .wrapper{
     width: 1170px;
     margin: 0% auto;
@@ -127,7 +127,7 @@ nav a:hover{
     position: relative;
     margin: 0;
 }
-/*********************/
+/***************************************************/
 
 h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -203,9 +203,10 @@ a, a:hover {
     margin-right: 10px;
 }
 /*Controla a distancia da lista, e a responsividade em tomanhos de telas diferentes*/
+/*Estava com # e não ."ponto" Lembrar!!!*/
 #dsmovie-card-list{
-    padding: 17px 83px;
-    min-width: 100px;  /*Tela de celular*/
+    padding: 10px 20px 0 5px;
+    min-width: 280px;  /*Tela de celular*/
     max-width: 2000px; /*Monitor*/
     margin: auto;
 }
@@ -214,9 +215,10 @@ a, a:hover {
 .dsmovie-card {
     width: 100%;
 }
+/*
 .row {
     transform: translate(-2.3%);  
-}
+}*/
 
 /*Efeito Zoom nos Cards*/
 ul li{
@@ -423,7 +425,7 @@ ul li{
 }
 
 .dsmovie-pagination-container{
-    padding: 0 0 12px;
+    padding: 0 0 20px;
     display: flex;
     justify-content: center;
 }
@@ -497,7 +499,14 @@ ul li{
     transform: rotate(180deg);
     color: var(--color-primary2);
 }
-/*Rodapé*/
+
+.dsmovie-card video{
+    width: 100%;
+    border-radius: 8px 8px 0 0;   
+    margin: 0;
+}
+
+/*******************Rodapé******************************************************************/
 footer{
     background-image: linear-gradient(to bottom, var(--botton-green), var(--color-primary2));
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
@@ -585,11 +594,10 @@ footer{
 
 .social-link{
     height: 100%;
-    width: 30px;
-    background-image: url("img/linkedin.svg");
+    width: 40px;
     background-size: 70%;
     background-position: center;
-    margin-right: 1rem;
+    
     background-repeat: no-repeat;
 }
 
@@ -652,13 +660,15 @@ footer .social-link :nth-of-type(4){
         border-bottom: none;
     }
 }
+.footer-content-container img{
+    width: 220px;
+}
+
+.footer-content-container h5{
+    padding-top:  5%;
+}
 
 .social-link img{
-    width: 25px;
+    width: 30px;
 }
-
-.dsmovie-card video{
-    width: 100%;
-    border-radius: 8px 8px 0 0;   
-    margin: 0;
-}
+/******************************/
