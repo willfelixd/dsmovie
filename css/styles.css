@@ -133,10 +133,14 @@ h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
 
+.html, body{
+    background-color: #ecf4ff;
+}
+
 /*Responsividade Nelio Alves
 .html, body{
     background-image: url("https://i.pinimg.com/736x/f1/65/6e/f1656e59ee2dd877040bbc273fda1e1d.jpg");
-    background-color: var(--bg-gray);
+    background-color: #ecf4ff;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;     
@@ -369,8 +373,8 @@ ul li{
 }
 
 .dsmovie-form-container{
-    padding: 40px 0;
-    max-width: 480px;
+    padding: 20px 0;
+    max-width: 450px;
 }
 
 .dsmovie-form-description{
@@ -502,7 +506,7 @@ ul li{
 
 .dsmovie-card video{
     width: 100%;
-    border-radius: 8px 8px 0 0;   
+    border-radius: 8px 8px 1px 0;   
     margin: 0;
 }
 
@@ -578,7 +582,7 @@ footer{
 }
 
 .menu-title{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 1.2rem;
