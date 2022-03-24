@@ -84,8 +84,9 @@ nav a:hover{
 }
 
 .banner-area{
-    width: 100%;
+    min-width: 280px;
     height: 90px;
+    display: block; 
     background-image: url("https://techbit.pt/wp-content/uploads/2021/01/disney-catalogo-filmes-series-star.jpg");
     background-size: cover;
     background-position: center center;
@@ -95,8 +96,9 @@ nav a:hover{
 }
 
 .banner-area2{
-    width: 100%;
+    min-width: 280px;
     height: 300px;
+    display: block;
     background-image: url("https://techbit.pt/wp-content/uploads/2021/01/disney-catalogo-filmes-series-star.jpg");
     background-size: cover;
     background-position: center center;
@@ -246,7 +248,7 @@ ul li{
   }
   
   ul li:hover::after{
-    opacity:1;
+    opacity:0.5;
   }
 /**********************************************************/
 
@@ -300,10 +302,11 @@ ul li{
     color: var(--text-light-gray);
     margin-bottom: -5px;
 }
-.dsmovie-btn, .dsmovie-btn:hover{
+.dsmovie-btn{
     width: 180px;
     height: 40px;
     background-color: var(--color-primary2);
+    box-shadow:0 1px 0 1px rgba(0, 0, 0, 0.596);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -314,31 +317,78 @@ ul li{
     border: 0;
 }
 
-.dsmovie-btn-b1, .dsmovie-btn-b1:hover{
-    width: 200px;
-    height: 25px;
-    background-color: var(--color-primary2);    
+.dsmovie-btn:hover{
+    width: 180px;
+    height: 40px;
+    background-color: var(--star-yellow);
+    box-shadow:0 1px 0 0.5px rgba(0, 0, 0, 0.377);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 7px;
+    border-radius: 7px; /* original 4px */
     border: 0;
 }
 
-.dsmovie-btn-b2, .dsmovie-btn-b2:hover{
+.dsmovie-btn-b1{
     width: 200px;
     height: 25px;
-    background-color: var(--botton-green);
+    background-color: var(--color-primary2);   
+    box-shadow:0 1px 0 1px rgba(0, 0, 0, 0.596);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 7px;
+    border-radius: 14px;
+    border: 0;
+}
+
+.dsmovie-btn-b1:hover{
+    width: 200px;
+    height: 25px;
+    background-color: var(--star-yellow);  
+    box-shadow:0 1px 0 0.5px rgba(0, 0, 0, 0.377);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    border: 0;
+}
+
+.dsmovie-btn-b2{
+    width: 200px;
+    height: 25px;
+    background-color: var(--botton-green);
+    box-shadow:0 1px 0 1px rgba(0, 0, 0, 0.596);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    border: 0;
+}
+
+.dsmovie-btn-b2:hover{
+    width: 200px;
+    height: 25px;
+    background-color: var(--star-yellow);  
+    box-shadow:0 1px 0 0.5px rgba(0, 0, 0, 0.377);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
     border: 0;
 }
 
@@ -358,10 +408,26 @@ ul li{
     justify-content: space-between;
 }
 
-.dsmovie-btn-sinopse, .dsmovie-btn-sinopse:hover{
+.dsmovie-btn-sinopse{
     width: 180px;
     height: 40px;
     background-color: var(--color-primary2);
+    box-shadow:0 1px 0 1px rgba(0, 0, 0, 0.596);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 0;
+}
+
+.dsmovie-btn-sinopse:hover{
+    width: 180px;
+    height: 40px;
+    background-color: var(--star-yellow);  
+    box-shadow:0 1px 0 0.5px rgba(0, 0, 0, 0.377);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -374,6 +440,7 @@ ul li{
 
 .dsmovie-form-container{
     padding: 20px 0;
+    min-width: 380px;
     max-width: 450px;
 }
 
@@ -435,7 +502,7 @@ ul li{
 }
 
 .dsmovie-pagination-box{
-    width: 200px;
+    width: 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -444,16 +511,16 @@ ul li{
 .dsmovie-pagination-box p{
     margin: 0;
     font-size: 11px;
-    color: var(--color-primary2);
-    font-weight: 400;
+    color: #616aaa;
+    font-weight: 700;
     justify-content: space-evenly;
 }
 
 .dsmovie-pagination-box p1{
     margin: 0;
     font-size: 11px;
-    color: var(--botton-green);
-    font-weight: 400;
+    color: #616aaa;
+    font-weight: 700;
     justify-content: space-evenly;
 }
 
@@ -461,17 +528,29 @@ ul li{
     margin: 0;
     font-size: 11px;
     color: var(--text-light-gray);
-    font-weight: 400;
+    font-weight: 700;
     justify-content: space-evenly;
 }
 
 .dsmovie-pagination-box button{
-    width: 70px;
+    width: 55px;
     height: 18px;
     border: 1px solid #616aaa;
-    border-radius: 7px;
-    box-shadow:0 1px 0 1px #616aaa;
+    border-radius: 14px;
+    box-shadow:0 1px 0 0.5px #616aaa;
     background-color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dsmovie-pagination-box button:hover{
+    width: 55px;
+    height: 18px;
+    border: 1px solid var(--bg-gray);
+    border-radius: 14px;
+    box-shadow:0 0.5px 0 0.5px var(--text-light-gray);
+    background-color: var(--bg-gray);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -480,7 +559,7 @@ ul li{
 .dsmovie-pagination-box button a{
     width: 85px;
     height: 25px;
-    border-radius: 7px;
+    border-radius: 14px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -493,6 +572,12 @@ ul li{
 
 .dsmovie-pagination-box button:disabled{
     border: 1px solid var(--text-light-gray);
+}
+
+.dsmovie-pagination-box button:disabled:hover{
+    border: 1px solid var(--text-light-gray);
+    background-color: var(--white);
+    box-shadow:0 1px 0 0.5px #616aaa;
 }
 
 .dsmovie-pagination-box button:disabled img{
@@ -575,6 +660,7 @@ footer{
     color: var(--white);
     text-decoration: none;
     transition: 0.5s;
+    font-size: 15px;
 }
 
 .menu-item-footer:hover{
@@ -676,3 +762,95 @@ footer .social-link :nth-of-type(4){
     width: 30px;
 }
 /******************************/
+
+/*Página Sobre o Projeto*/
+.dsmovie-sobre-description{
+    min-width: 280px;
+    max-width: 1550px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-sobre-description h1{
+    margin: 35px 45px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #ecf4ff;
+    background-image: linear-gradient(to right, transparent, var(--botton-green), transparent);
+    padding: 5px;
+    border-radius: 25px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.089);
+}
+
+.dsmovie-sobre-description p{
+    margin: 15px 45px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 2em;
+    text-indent: 30px;
+    color: var(--color-primary2);
+}
+
+.dsmovie-sobre-description img{
+    width: 30%;
+    min-width: 330px;
+    max-width: 1550px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+.dsmovie-sobre-description h2{
+    margin: 25px 45px;
+    font-size: 30px;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 2em;
+    text-indent: 25px;
+    color: #ecf4ff;
+    background-image: linear-gradient(to right, var(--botton-green), transparent);
+    padding: 5px;
+    border-radius: 20px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.089);
+}
+
+.dsmovie-sobre-description li{
+    list-style-type: '\2714\00A0\00A0';
+    margin: 0 45px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 2em;
+    text-indent: 30px;
+    color: var(--color-primary2);
+}
+
+.dsmovie-sobre-description strong{
+    color: var(--botton-green);
+    font-weight: bold;
+}
+
+.dsmovie-sobre-description strong:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.dsmovie-sobre-description em{
+    color: var(--botton-green);
+    font-weight: bold;
+}
+
+.dsmovie-sobre-description em:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Simbolo de link externo do wikipedia
+.externo::after{
+    content: '\00A0\1F517';
+}*/
