@@ -213,7 +213,7 @@ a, a:hover {
 #dsmovie-card-list{
     padding: 10px 20px 0 5px;
     min-width: 280px;  /*Tela de celular*/
-    max-width: 2000px; /*Monitor*/
+    max-width: 1310px; /*Monitor*/
     margin: auto;
 }
 /***********************************************************************************/
@@ -437,11 +437,16 @@ ul li{
     border-radius: 7px;
     border: 0;
 }
-
+/*Backup
 .dsmovie-form-container{
     padding: 20px 0;
     min-width: 380px;
     max-width: 450px;
+}*/
+.dsmovie-form-container{
+    padding: 25px;
+    min-width: 250px;
+    max-width: 500px;
 }
 
 .dsmovie-form-description{
@@ -452,6 +457,7 @@ ul li{
     align-items: center;
     border-radius: 0 0 8px 8px;
     box-shadow:0 1px 2px 0 var(--color-primary2);
+    margin: auto; /*tava sem */
 }
 
 .dsmovie-form{
@@ -499,6 +505,7 @@ ul li{
     padding: 0 0 20px;
     display: flex;
     justify-content: center;
+    margin-left: 12px;
 }
 
 .dsmovie-pagination-box{
@@ -780,7 +787,7 @@ footer .social-link :nth-of-type(4){
     font-weight: 700;
     text-align: center;
     color: #ecf4ff;
-    background-image: linear-gradient(to right, transparent, var(--botton-green), transparent);
+    background-image: linear-gradient(to right, var(--color-primary2), var(--botton-green), var(--botton-green), var(--color-primary2));
     padding: 5px;
     border-radius: 25px;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
@@ -813,8 +820,8 @@ footer .social-link :nth-of-type(4){
     line-height: 2em;
     text-indent: 25px;
     color: #ecf4ff;
-    background-image: linear-gradient(to right, var(--botton-green), transparent);
-    padding: 5px;
+    background-image: linear-gradient(to right, var(--botton-green), var(--botton-green), var(--color-primary2));
+    padding: 3px;
     border-radius: 20px;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.089);
@@ -849,8 +856,125 @@ footer .social-link :nth-of-type(4){
     font-weight: bold;
     text-decoration: underline;
 }
+/************************************/
 
 /*Simbolo de link externo do wikipedia
 .externo::after{
     content: '\00A0\1F517';
 }*/
+
+/*Página Catálogo Completo*/
+.dsmovie-catalogo-container{
+    padding: 55px;
+    min-width: 250px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.dsmovie-catalogo-description{
+    background-color: var(--white);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow:0 1px 2px 0 var(--color-primary2);
+    align-items: center;
+}
+
+.titulo-catalogo h1{
+    margin: 0 65px;
+    margin-top: 55px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #ecf4ff;
+    background-image: linear-gradient(to right, var(--color-primary2), var(--botton-green), var(--botton-green), var(--color-primary2));
+    padding: 5px;
+    border-radius: 25px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.089);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-catalogo-description p{
+    margin: 10px 10px;
+    font-size: 15px;
+    line-height: 2em;
+    color: var(--color-primary2);
+}
+
+.dsmovie-catalogo-description strong{
+    color: var(--botton-green);
+    font-weight: bold;
+}
+
+.dsmovie-catalogo-description strong:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+/******************************************/
+
+/*Página de Contatos*/
+
+.dsmovie-contatos-container{
+    padding: 55px;
+    min-width: 250px;
+    max-width: 750px;
+    margin: auto;
+}
+
+.dsmovie-contatos-description{
+    background-image: linear-gradient(to right, var(--color-primary2), var(--botton-green), var(--botton-green), var(--botton-green), var(--color-primary2));;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
+}
+/*corrgir*/
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .perfil {
+    display: flex;
+  }
+  
+  .perfil-foto {
+    max-width: 160px;
+    border-radius: 460px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .titulo {
+    margin-left: 16px;
+  }
+  
+  .titulo h1 {
+    font-weight: 700;
+    font-size: 36px;
+  }
+  
+  .titulo h3 {
+    font-weight: normal;
+    font-size: 24px;
+  }  
+/***/
+.dsmovie-contatos-description p{
+    margin: 10px 30px;
+    font-size: 15px;
+    line-height: 2em;
+    color: #ecf4ff;
+}
+
+.dsmovie-contatos-description strong{
+    color: #ecf4ff;
+    font-weight: bold;
+}
+
+.dsmovie-contatos-description strong:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
