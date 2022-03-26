@@ -69,7 +69,7 @@ nav a{
     font-size: 16px;
     font-weight: 550;
     color: var(--white);
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
     display: flex;
     flex-direction: row;
     border-radius: 5px;
@@ -920,18 +920,20 @@ footer .social-link :nth-of-type(4){
 .dsmovie-contatos-container{
     padding: 55px;
     min-width: 250px;
-    max-width: 750px;
+    max-width: 650px;
     margin: auto;
 }
 
 .dsmovie-contatos-description{
     background-image: linear-gradient(to right, var(--color-primary2), var(--botton-green), var(--botton-green), var(--botton-green), var(--color-primary2));;
-    padding: 30px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    align-items: center;
 }
+
 /*corrgir*/
 .cabecalho {
     display: flex;
@@ -940,33 +942,46 @@ footer .social-link :nth-of-type(4){
   
   .perfil {
     display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
   }
   
   .perfil-foto {
-    max-width: 160px;
+    max-width: 180px;
     border-radius: 460px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   }
-  
+
   .titulo {
-    margin-left: 16px;
+    margin-top: 5px;
   }
   
   .titulo h1 {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 33px;
+    color: #ecf4ff;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
+    display: flex;
+    justify-content: space-between;
   }
   
-  .titulo h3 {
+  .titulo h4 {
     font-weight: normal;
     font-size: 24px;
+    color: var(--white);
+    opacity: 0.7;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.507);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 36px;
   }  
 /***/
 .dsmovie-contatos-description p{
-    margin: 10px 30px;
-    font-size: 15px;
+    margin: 15px;
+    font-size: 16px;
     line-height: 2em;
     color: #ecf4ff;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
 }
 
 .dsmovie-contatos-description strong{
@@ -977,4 +992,8 @@ footer .social-link :nth-of-type(4){
 .dsmovie-contatos-description strong:hover{
     font-weight: bold;
     text-decoration: underline;
+}
+
+.contatos-will{
+    margin-top: 15px;
 }
