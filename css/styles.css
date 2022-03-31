@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
     --bg-gray: #ddd;
@@ -7,6 +8,7 @@
     --color-primary2: #1d2440;
     --color-primary3: #07c972;
     --color-primary4: #359d9e;
+    --color-primary5: #2c3e50;
     --white: #FFFFFF;
     --text-light-gray: #aaa;
     --star-yellow: #FFBB3A;
@@ -36,7 +38,13 @@ label.logo{
     line-height: 70px;
     padding: 0 70px;/*padding: 0 100px*/
     font-weight: bold;
-    letter-spacing: 0.5px;
+    letter-spacing: -2px;
+}
+
+label.logo a:hover{
+    background: none;
+    color: var(--white);
+    transition: .5s;
 }
 
 nav ul{
@@ -107,7 +115,7 @@ a.active{
       position: absolute;
       width: 100%;
       height: 90vh;
-      background: #2c3e50;
+      background-image: linear-gradient( #405870, var(--color-primary5));
       top: 70px;
       left: -100%;
       text-align: center;
@@ -520,7 +528,7 @@ a, a:hover {
 
 .dsmovie-card-box-shadow{
     border-radius: 8px 8px 0 0;
-    box-shadow:0 1px 2px 0 var(--color-primary2);
+    box-shadow:0 1px 2px 0 var(--color-primary5);
 }
 .dsmovie-card img{
     width: 100%;
@@ -536,7 +544,7 @@ a, a:hover {
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
     height: 190px;
-    box-shadow:0 1px 2px 0 var(--color-primary2);
+    box-shadow:0 1px 2px 0 var(--color-primary5);
 }
 
 .dsmovie-card-description h3 {
@@ -544,18 +552,21 @@ a, a:hover {
     font-weight: 700;
     margin-bottom: 1px;
     text-align: center;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
 }
 
 .dsmovie-card-description-bottom{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
 }
 
 .dsmovie-card-description-bottom h4{
     font-size: 16px;
     font-weight: 700;
     color: var(--star-yellow);
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.178);
 }
 
 .dsmovie-card-description-bottom img{
@@ -567,12 +578,13 @@ a, a:hover {
     font-weight: 400;
     color: var(--text-light-gray);
     margin-bottom: -5px;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
 }
 .dsmovie-btn{
     width: 180px;
     height: 40px;
     background-color: var(--color-primary4);
-    box-shadow:0 1px 0 1px rgba(0, 0, 0, 0.596);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.377);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -587,7 +599,7 @@ a, a:hover {
     width: 180px;
     height: 40px;
     background-color: var(--star-yellow);
-    box-shadow:0 1px 0 0.5px rgba(0, 0, 0, 0.377);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.377);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -603,8 +615,8 @@ a, a:hover {
     margin-top: 2px;
     width: 200px;
     height: 28px;
-    background-color: var(--color-primary2);   
-    box-shadow:0 1px 0 0.5px rgba(0, 0, 0, 0.596);
+    background-color: var(--color-primary5);   
+    box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.377);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -619,7 +631,7 @@ a, a:hover {
     width: 200px;
     height: 27px;
     background-color: var(--star-yellow);  
-    box-shadow:0 1px 0 0.5px rgba(0, 0, 0, 0.377);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.377);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -636,7 +648,7 @@ a, a:hover {
     width: 200px;
     height: 27px;
     background-color: var(--color-primary4);
-    box-shadow:0 1px 0 0.5px rgba(0, 0, 0, 0.596);
+    box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.377);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -651,7 +663,7 @@ a, a:hover {
     width: 200px;
     height: 27px;
     background-color: var(--star-yellow);  
-    box-shadow:0 1px 0 0.5px rgba(0, 0, 0, 0.377);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.377);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -683,7 +695,7 @@ a, a:hover {
     width: 180px;
     height: 40px;
     background-color: var(--color-primary4);
-    box-shadow:0 1px 0 1px rgba(0, 0, 0, 0.596);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.377);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -698,7 +710,7 @@ a, a:hover {
     width: 180px;
     height: 40px;
     background-color: var(--star-yellow);  
-    box-shadow:0 1px 0 0.5px rgba(0, 0, 0, 0.377);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.377);
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
@@ -728,7 +740,7 @@ a, a:hover {
     flex-direction: column;
     align-items: center;
     border-radius: 0 0 8px 8px;
-    box-shadow:0 1px 2px 0 var(--color-primary2);
+    box-shadow:0 1px 2px 0 var(--color-primary5);
     margin: auto; /*tava sem */
 }
 
@@ -736,16 +748,24 @@ a, a:hover {
     width: 100%;
 }
 
+.dsmovie-form-sinopse{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
 .dsmovie-form-description h3{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     margin-bottom: 20px;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
 }
 
 .dsmovie-form-description p{
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 20px;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
 }
 
 .dsmovie-form-group{
@@ -755,6 +775,7 @@ a, a:hover {
 .dsmovie-form-group label{
     font-size: 12px;
     color: var(--text-light-gray);
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
 }
 
 .dsmovie-form-btn-container{
@@ -790,9 +811,10 @@ a, a:hover {
 .dsmovie-pagination-box p{
     margin: 0;
     font-size: 11px;
-    color: var(--color-primary2);
+    color: var(--color-primary4);
     font-weight: 700;
     justify-content: space-evenly;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
 }
 
 .dsmovie-pagination-box p1{
@@ -801,6 +823,7 @@ a, a:hover {
     color: var(--color-primary4);
     font-weight: 700;
     justify-content: space-evenly;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
 }
 
 .dsmovie-pagination-box p2{
@@ -809,12 +832,13 @@ a, a:hover {
     color: var(--text-light-gray);
     font-weight: 700;
     justify-content: space-evenly;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
 }
 
 .dsmovie-pagination-box button{
     width: 55px;
     height: 18px;
-    border: 1px solid var(--text-light-gray);
+    border: 5px ;
     border-radius: 100px;
     box-shadow:0 1px 0 0.5px var(--text-light-gray);
     background-color: var(--white);
@@ -826,7 +850,7 @@ a, a:hover {
 .dsmovie-pagination-box button:hover{
     width: 55px;
     height: 18px;
-    border: 1px solid var(--bg-gray);
+    border: 5px;
     border-radius: 100px;
     box-shadow:0 0.5px 0 0.5px var(--text-light-gray);
     background-color: var(--bg-gray);
@@ -843,6 +867,7 @@ a, a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
 }
 
 .dsmovie-pagination-box button img{
@@ -851,11 +876,11 @@ a, a:hover {
 }
 
 .dsmovie-pagination-box button:disabled{
-    border: 1px solid var(--text-light-gray);
+    border: 5px;
 }
 
 .dsmovie-pagination-box button:disabled:hover{
-    border: 1px solid var(--text-light-gray);
+    border: 5px;
     background-color: var(--white);
     box-shadow:0 1px 0 0.5px var(--text-light-gray);
 }
@@ -877,7 +902,7 @@ a, a:hover {
 
 /*******************Rodapé******************************************************************/
 footer{
-    background-image: linear-gradient(to bottom, var(--color-primary4), var(--color-primary2));
+    background-image: linear-gradient(to bottom, #405870, var(--color-primary5));
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
     bottom: 0;
     left: 0;
@@ -895,7 +920,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: var(--color-primary2);
+    border-top: var(--color-primary5);
 }
 
 .copyright{
@@ -996,7 +1021,7 @@ footer .social-link :nth-of-type(4){
     .footer-content-container{
         width: 100%;
         padding: 2rem 0;
-        border-bottom: 1px solid var(--color-primary2);
+        border-bottom: 1px solid var(--bg-gray);
         justify-content: center;
         align-items: center;
     }
@@ -1015,7 +1040,7 @@ footer .social-link :nth-of-type(4){
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        border-bottom: 1px solid var(--color-primary2);
+        border-bottom: 1px solid var(--bg-gray);
     }
 
     .footer-menus .footer-content-container :nth-of-type(1){
@@ -1060,7 +1085,7 @@ footer .social-link :nth-of-type(4){
     font-weight: 700;
     text-align: center;
     color: #ecf4ff;
-    background-image: linear-gradient(to right, var(--color-primary2), var(--botton-green), var(--botton-green), var(--color-primary2));
+    background-image: linear-gradient(to right, #047f81, var(--color-primary4), var(--color-primary4), #047f81);
     padding: 5px;
     border-radius: 25px;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
@@ -1073,12 +1098,12 @@ footer .social-link :nth-of-type(4){
     font-size: 15px;
     line-height: 2em;
     text-indent: 30px;
-    color: var(--color-primary2);
+    color: var(--color-primary5);
 }
 
 .dsmovie-sobre-description img{
-    width: 30%;
-    min-width: 330px;
+    width: 40%;
+    min-width: 337px;
     max-width: 1550px;
     display: block;
     margin: auto;
@@ -1093,7 +1118,7 @@ footer .social-link :nth-of-type(4){
     line-height: 2em;
     text-indent: 25px;
     color: #ecf4ff;
-    background-image: linear-gradient(to right, var(--botton-green), var(--botton-green), var(--color-primary2));
+    background-image: linear-gradient(to right, var(--color-primary4), var(--color-primary4), #047f81);
     padding: 3px;
     border-radius: 20px;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
@@ -1106,11 +1131,11 @@ footer .social-link :nth-of-type(4){
     font-size: 15px;
     line-height: 2em;
     text-indent: 30px;
-    color: var(--color-primary2);
+    color: var(--color-primary5);
 }
 
 .dsmovie-sobre-description strong{
-    color: var(--botton-green);
+    color: #047f81;
     font-weight: bold;
 }
 
@@ -1120,7 +1145,7 @@ footer .social-link :nth-of-type(4){
 }
 
 .dsmovie-sobre-description em{
-    color: var(--botton-green);
+    color: #047f81;
     font-weight: bold;
 }
 
@@ -1150,7 +1175,7 @@ footer .social-link :nth-of-type(4){
     flex-direction: column;
     justify-content: space-between;
     border-radius: 15px 15px 15px 15px;
-    box-shadow:0 1px 2px 0 var(--color-primary2);
+    box-shadow:0 1px 2px 0 var(--color-primary5);
     align-items: center;
 }
 
@@ -1161,7 +1186,7 @@ footer .social-link :nth-of-type(4){
     font-weight: 700;
     text-align: center;
     color: #ecf4ff;
-    background-image: linear-gradient(to right, var(--color-primary2), var(--botton-green), var(--botton-green), var(--color-primary2));
+    background-image: linear-gradient(to right, #047f81, var(--color-primary4), var(--color-primary4), #047f81);
     padding: 5px;
     border-radius: 25px;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.377);
@@ -1174,12 +1199,12 @@ footer .social-link :nth-of-type(4){
     margin: 10px;
     font-size: 15px;
     line-height: 2em;
-    color: var(--color-primary2);
+    color: var(--color-primary5);
     text-align: center;
 }
 
 .dsmovie-catalogo-description strong{
-    color: var(--botton-green);
+    color: #047f81;
     font-weight: bold;
 }
 
@@ -1199,7 +1224,7 @@ footer .social-link :nth-of-type(4){
 }
 
 .dsmovie-contatos-description{
-    background-image: linear-gradient(to right, var(--color-primary2), var(--botton-green), var(--botton-green), var(--botton-green), var(--color-primary2));;
+    background-image: linear-gradient(to right, var(--color-primary5),#405870, var(--color-primary5));
     padding: 10px;
     display: flex;
     flex-direction: column;
