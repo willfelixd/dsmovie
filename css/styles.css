@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+/*Animação de pular dos botões com mouse*/ 
+@keyframes bounce{
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0) ;
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-transform: translateY(-10px) ;
+        transform: translateY(-10px);
+    }
+    80%{
+        -webkit-transform: translateY(-5px) ;
+        transform: translateY(-5px);
+    }
+}
+/****************************************/
+
 :root {
     --bg-gray: #ddd;
     --text-gray: #4a4a4a4a;
@@ -608,7 +625,8 @@ a, a:hover {
     justify-content: center;
     border-radius: 7px; /* original 4px */
     border: 0;
-    transition: .5s;
+    transition: 1s;
+    animation: bounce 1s;
 }
 
 .dsmovie-btn-b1{
@@ -640,7 +658,8 @@ a, a:hover {
     justify-content: center;
     border-radius: 100px;
     border: 0;
-    transition: .5s;
+    transition: 1s;
+    animation: bounce 1s;
 }
 
 .dsmovie-btn-b2{
@@ -672,7 +691,8 @@ a, a:hover {
     justify-content: center;
     border-radius: 100px;
     border: 0;
-    transition: .5s;
+    transition: 1s;
+    animation: bounce 1s;
 }
 
 .dsmovie-form-btn-container-b1{
@@ -719,7 +739,8 @@ a, a:hover {
     justify-content: center;
     border-radius: 7px;
     border: 0;
-    transition: .5s;
+    transition: 1s;
+    animation: bounce 1s;
 }
 /*Backup
 .dsmovie-form-container{
@@ -1266,13 +1287,12 @@ footer .social-link :nth-of-type(4){
   
   .titulo h4 {
     font-weight: normal;
-    font-size: 21px;
-    color: var(--white);
-    opacity: 0.7;
+    font-size: 17px;
+    color: var(--bg-gray);
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.507);
     display: flex;
     justify-content: space-between;
-    margin-left: 29px;
+    margin-left: 38px;
     text-align: center;
   }  
 

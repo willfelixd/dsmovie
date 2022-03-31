@@ -11,17 +11,25 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 </head>
 
 <body>
     <header>
-        <nav class="container">
-            <h1>DSMovie</h1>
-            <div class="dsmovie-contact-container">
-                <img src="img/github.svg" alt="Github">
-                <a href="https://github.com/willfelixd">/willfelixd</a>
-            </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><a href="index.html">
+                DSMovie</a></label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="catalogo-comp.html">Catálogo</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -31,7 +39,7 @@
             <div class="container dsmovie-form-container">
 
                 <div>
-                    <div class="dsmovie-card"><div class="dsmovie-card-box-shadow"><img src="https://www.themoviedb.org/t/p/w500_and_h282_face/un7pVnJC2el8YxdIOg6YrSmBTlO.jpg"
+                    <div class="dsmovie-card"><div class="dsmovie-card-box-shadow"><img src="https://www.themoviedb.org/t/p/w500_and_h282_face/ysobKB5hktHZJjf0J5LGy7ZjMPL.jpg"
                         alt="A Cabana"></div>
                         
                         <div class="dsmovie-form-description">
@@ -65,6 +73,45 @@
 
         </section>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-container"><img src="img/logo.png" alt="WSMovies-logo">
+                <h5 class="website-logo">By William Felix</h5>
+                <span class="footer-info">ADS student</span>
+                <span class="footer-info"></span>
+            </div>
+            <div class="footer-menus"></div>
+            <div class="footer-content-container">
+                <span class="menu-title">Menu</span>
+                <a href="index.html" class="menu-item-footer">Home</a>
+                <a href="sobre.html" class="menu-item-footer">Sobre</a>
+            </div>
+            <div class="footer-content-container">
+                <span class="menu-title">Legal</span>
+                <a href="" class="menu-item-footer">Políticas de Privacidade</a>
+                <a href="" class="menu-item-footer">Cookies</a>
+                <a href="" class="menu-item-footer">Termos & Condições</a>
+            </div>
+            <div class="footer-content-container">
+                <span class="menu-title">Contatos</span>
+                <div class="social-container">
+                    <a href="https://www.linkedin.com/in/william-felix-018493186" class="social-link"><img
+                            src="img/linkedin.svg" alt="linkedin"></a>
+                    <a href="https://instagram.com/willfelixd" class="social-link"><img src="img/instagram.svg"
+                            alt="instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100007890798673" class="social-link"><img
+                            src="img/facebook.svg" alt="facebook"></a>
+                    <a href="https://github.com/willfelixd" class="social-link"><img src="img/github.svg"
+                            alt="github"></a>
+                    <a href="mailto:willfelixd@gmail.com" class="social-link"><img src="img/gmail.svg" alt="gmail"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <span class="copyright">© 2022 DSMovie</span>
+        </div>
+    </footer>
 
 </body>
 
