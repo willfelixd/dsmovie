@@ -765,6 +765,17 @@ a, a:hover {
     margin: auto; /*tava sem */
 }
 
+.dsmovie-form-description-sinopse{
+    background-color: var(--white);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow:0 1px 2px 0 var(--color-primary5);
+    margin: auto; /*tava sem */
+}
+
 .dsmovie-form{
     width: 100%;
 }
@@ -786,6 +797,21 @@ a, a:hover {
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 20px;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
+}
+
+.dsmovie-form-description-sinopse h3{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
+}
+
+.dsmovie-form-description-sinopse p{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 20px;
     text-shadow: 0 0 0.1em rgba(0, 0, 0, 0.274);
 }
 
