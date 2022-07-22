@@ -20,7 +20,7 @@
 </p>
                     
 <div>
-  <h2 align="justify"> Link de acesso ao site: <a href="https://willfelixd.github.io/dsmovie/"><i>https://willfelixd.github.io/dsmovie/</i></a></h2>
+  <h2 align="justify"> Link de acesso ao site: <a href="https://willfelixd.github.io/dsmovie/"><i>willfelixd.github.io/dsmovie</i></a></h2>
 </div><br />
 
 <p align="center">
@@ -89,7 +89,11 @@
   William Felix de Souza
   </p>
   <p align="justify">
-  <a href="https://www.linkedin.com/in/william-felix-018493186" class="externo"><strong>https://www.linkedin.com/in/william-felix-018493186</strong></a>
+  Linkedin: <a href="https://www.linkedin.com/in/william-felix-018493186" class="externo"><strong>linkedin.com/in/william-felix-souza</strong></a>
+  </p>
+  </p>
+  <p align="justify">
+  E-mail: <a href="willfelixd@gmail.com" class="externo"><strong>willfelixd@gmail.com</strong></a>
   </p>
   
 <h2>Agradecimentos</h2>
