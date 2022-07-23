@@ -13,7 +13,7 @@
 </div>
 
 <p align="justify">
-  Durante os dias 7 e 13 de março participei da semana Spring React, que foi promovida pela
+  Durante os dias 7 e 13 de março de 2022 participei da semana Spring React, que foi promovida pela
   <a href="https://devsuperior.com.br/cursos" class="externo"><strong>DevSuperior</strong></a> -
   escola de programação. Desenvolvi o projeto da trilha para iniciantes do catálogo de filmes, seguindo as orientações do professor
   <a href="https://www.linkedin.com/in/nelio-alves/?originalSubdomain=br" class="externo"><em>Nelio Alves</em></a>. 
